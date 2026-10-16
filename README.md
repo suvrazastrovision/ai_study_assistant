@@ -1,14 +1,14 @@
 # AI Study Assistant
 
-I designed this Flask app for my students. This AI-based app creates quiz questions, concise summaries, and study plans with OpenAI.
+This is a Flask app that creates quiz questions, concise summaries, and study plans with OpenAI.
 
 **Tech stack:** Python, Flask, OpenAI Responses API (`gpt-4o-mini`), HTML, CSS.
 
 ## Preview
 
-Animated preview cycling through sample quiz, summary, and study-plan outputs:
+Animated preview using Model Context Protocol (MCP) as the topic, cycling through quiz, summary, and study-plan outputs:
 
-![AI Study Assistant demo showing all three study modes](screenshots/study-modes-demo.gif)
+![AI Study Assistant showing quiz, summary, and study plan examples for Model Context Protocol](screenshots/mcp-study-modes-demo.gif)
 
 ## Setup
 
