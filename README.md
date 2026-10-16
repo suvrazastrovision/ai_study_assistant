@@ -4,6 +4,10 @@ A Flask app that creates quiz questions, concise summaries, and study plans with
 
 **Tech stack:** Python, Flask, OpenAI Responses API (`gpt-4o-mini`), HTML, CSS.
 
+## Preview
+
+![AI Study Assistant showing generated quiz questions](screenshots/study-assistant.png)
+
 ## Setup
 
 ```powershell
