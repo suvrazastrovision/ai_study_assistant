@@ -1,17 +1,26 @@
 # AI Study Assistant
 
-## Setup
+A Flask app that creates quiz questions, concise summaries, and study plans with OpenAI.
 
-Install the dependencies:
+**Tech stack:** Python, Flask, OpenAI Responses API (`gpt-4o-mini`), HTML, CSS.
+
+## Setup
 
 ```powershell
 python -m pip install -r requirements.txt
+Copy-Item .env.example .env
 ```
 
-Copy `.env.example` to `.env` and add your OpenAI API key:
+Add your OpenAI API key to `.env`:
 
 ```text
 OPENAI_API_KEY=your_api_key_here
 ```
 
-The app loads `.env` when it starts. Keep `.env` private; it is excluded from Git.
+Run the app:
+
+```powershell
+python app.py
+```
+
+Open http://localhost:5000. Keep `.env` private; it is excluded from Git.
