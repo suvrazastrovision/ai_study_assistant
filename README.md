@@ -1,6 +1,6 @@
 # AI Study Assistant
 
-A Flask app that I designed for my students creates quiz questions, concise summaries, and study plans with OpenAI.
+I designed this Flask app for my students. This AI-based app creates quiz questions, concise summaries, and study plans with OpenAI.
 
 **Tech stack:** Python, Flask, OpenAI Responses API (`gpt-4o-mini`), HTML, CSS.
 
