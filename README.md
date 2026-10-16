@@ -1,5 +1,9 @@
 # AI Study Assistant
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-web%20framework-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Responses%20API-412991?logo=openai&logoColor=white)](https://platform.openai.com/docs/api-reference/responses)
+
 This is a Flask app that creates quiz questions, concise summaries, and study plans with OpenAI.
 
 **Tech stack:** Python, Flask, OpenAI Responses API (`gpt-4o-mini`), HTML, CSS.
