@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask AI Study Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card hero-card">
+        <h1>Study Assistant</h1>
+        <p class="intro">
+          Choose a topic and a study mode to create focused materials for your
+          next study session.
+        </p>
+      </section>
+
+      <section class="grid">
+        <section class="card form-card">
+          <h2>Build a study session</h2>
+          <form method="post" class="study-form">
+            <label for="topic">Topic</label>
+            <input
+              id="topic"
+              name="topic"
+              type="text"
+              value="{{ topic }}"
+              placeholder="Try a focused topic, like SQL joins"
+              required
+            >
+
+            <label for="mode">Study mode</label>
+            <select id="mode" name="mode">
+              <option value="quiz" {% if mode == "quiz" %}selected{% endif %}>Quiz questions</option>
+              <option value="summary" {% if mode == "summary" %}selected{% endif %}>Summary</option>
+              <option value="plan" {% if mode == "plan" %}selected{% endif %}>Study plan</option>
+            </select>
+
+            <button type="submit">Create study material</button>
+          </form>
+
+          {% if error %}
+          <div class="message error" role="alert">{{ error }}</div>
+          {% endif %}
+        </section>
+
+        <section class="card result-card" aria-live="polite">
+          <h2>Your study material</h2>
+          {% if result %}
+          <pre class="result-output" tabindex="0">{{ result }}</pre>
+          {% else %}
+          <p class="empty-state">
+            Your questions, summary, or study steps will appear here. Start by
+            entering a topic and choosing a study mode.
+          </p>
+          {% endif %}
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
