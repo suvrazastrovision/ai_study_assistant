@@ -6,7 +6,9 @@ A Flask app that creates quiz questions, concise summaries, and study plans with
 
 ## Preview
 
-![AI Study Assistant showing generated quiz questions](screenshots/study-assistant.png)
+Animated preview cycling through sample quiz, summary, and study-plan outputs:
+
+![AI Study Assistant demo showing all three study modes](screenshots/study-modes-demo.gif)
 
 ## Setup
 
